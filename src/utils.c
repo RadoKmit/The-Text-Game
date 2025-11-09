@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <stddef.h>
-#include <string.h>
 
 void print_buffer(char *buffer){
     char *ptr = buffer;
