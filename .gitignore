@@ -1,5 +1,7 @@
-
-
+# program files
+.vscode/
 # compiled files
 main.exe
 /build
+build/main.o
+build/ui.o
