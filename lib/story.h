@@ -1,6 +1,6 @@
 #ifndef STORY_H
 #define STORY_H
 
-// functions
+void game_loop();
 
 #endif

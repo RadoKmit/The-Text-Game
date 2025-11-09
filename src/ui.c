@@ -20,7 +20,7 @@ int ask_question(char *question, char options[3][15]){
     printf("\n");
     int option = 0;
     for(int i=0; i < 3; i++){
-        printf("%d.", i);
+        printf("%d.", i+1);
         print_buffer(options[i]);
         printf("\n");
     }
