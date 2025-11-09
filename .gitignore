@@ -5,3 +5,6 @@ main.exe
 /build
 build/main.o
 build/ui.o
+
+# Test files
+Intro

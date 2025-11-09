@@ -1,6 +1,9 @@
-#include <stdio.h>
 #include "ui.h"
 #include "story.h"
+#include "utils.h"
+
+#include <stdio.h>
+#include <string.h>
 
 void intro(){
     printf("You woke up in the middle of the forest\n");
@@ -9,14 +12,16 @@ void intro(){
 
 void game_loop(){
     intro();
-    char options1[3][15] = {
-        "Dark path",
-        "Darker path",
-        "Well lit path"
-    };
+
+    char **opt1 = (char **)malloc_2d(3, 15, sizeof(char));
+
+    strcpy(opt1[0], "Dark path");
+    strcpy(opt1[1], "Darker path");
+    strcpy(opt1[2], "Well lit path");
 
     int path = 0;
-    path = ask_question("Which path will you take?", options1);
+    path = ask_question("Which path will you take?", opt1);
+    free_2d((void **)opt1, 3);
     if (path == 1){
         printf("The path is very dark yet you somehow managed to not trip and die \n");
         printf("You found a wooden house!! \n");  
