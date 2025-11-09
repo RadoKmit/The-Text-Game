@@ -1,3 +1,5 @@
+#include "ui.h"
+
 #include <stdio.h>
 
 void print_buffer(char *buffer){
@@ -11,14 +13,4 @@ void print_npc(char *name, char *msg){
     printf(": ");
     print_buffer(msg);
     printf("\n");
-}
-
-void main() {
-    print_npc("Samo", "JeS!");
-}
-
-// jes
-void main() {
-    printf("wohou!\n");
-    
 }
